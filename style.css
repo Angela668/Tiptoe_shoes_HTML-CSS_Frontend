@@ -1,0 +1,201 @@
+/* import Google roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap'); 
+
+/* font styles */
+html * {
+    font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header styles */
+header {
+    background-color: #E46DDB;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap
+}
+
+/* h1 styles */
+h1{
+    text-align: center;
+    margin: auto;
+    font-size: 5em;
+}
+
+/* logo styles */
+.logo {
+    padding-left: 20px;
+}
+
+/* image styles */
+img {
+    max-width: 200px;
+    margin: 20px;
+    aspect-ratio: 4/3;
+}
+
+/* Main styles */
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Nav styles */
+nav {
+    background: #E8B5E3;
+    width: 200px;
+    padding: 20px;
+}
+
+/* list styles */
+nav ul {
+    list-style: none;
+    margin-top: 10px;
+    padding: 0;
+    align-items: baseline;
+}
+
+/* links inside nav styles */
+nav a {
+    display: block;
+    padding: 5px 0;
+
+    text-decoration: none;
+}
+
+/* link styles */
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Mouse over link styles */
+a:hover {
+    color: #E312D5;
+    transition: color 0.3s ease;
+}
+
+/* Remove list styles */
+.none-ul {
+    /* list-style-type: dash; */
+    list-style-type: none;
+  }
+
+/* h2 styles */
+h2 {
+    width: 100%; /* Make the heading take the full width */
+    text-align: left;
+    background-color: #E46DDB; 
+    color: #000000; 
+    padding: 20px; 
+    }
+
+ /* to display two columns */  
+.cols{
+    padding: 10px;
+    margin: 30px;
+    width: 50%;
+}
+    
+/* article styles */
+article {
+    display: flex;
+}
+
+/* Banner styles */
+section {
+    background: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    padding: 20px;
+    color: #333;
+}
+
+/* make the price center styles */
+.price {
+    text-align: center;
+}
+
+/* For current page indicator */
+.current-page {
+    color: #E312D5;
+    font-weight: bolder;
+}
+
+/* Footer styles */
+footer {
+    background: #634E62;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Center the links horizontally */
+.footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 10px;   
+    flex-wrap: wrap 
+}
+
+/* for links in the footer */
+.footer-links li {
+    margin: 0 10px;
+}
+
+/* Additional styles for the footer links */
+.footer-links a {
+    color: white;
+    transition: color 0.3s ease;}
+
+/* mouse over footer links */
+.footer-links a:hover {
+        color: #E312D5; 
+    }
+ 
+/* Media query for responsive navigation */
+@media (max-width: 600px) {
+    main {
+        flex-direction: column;
+    }
+
+    /* change the view into column */
+    article {
+        flex-direction: column;
+    }
+
+   /* Take full width of the screen */
+    .cols{
+
+        width: 100%;
+}
+
+    /* Take full width of the screen */
+    nav {
+        width: 100%; 
+        padding: 20px 10px; 
+    }
+
+    /* Allow items to wrap to the next line */
+    nav ul {
+        display: flex; /* Display items in a row */
+        flex-wrap: wrap;
+        justify-content: space-between; 
+    }
+
+    /* Make each link take equal width */
+    nav a {
+        flex: 1; 
+        text-align: center; 
+        margin: 5px; /* Add spacing between links */
+        padding: 10px 0;
+        
+    }
+}
+
